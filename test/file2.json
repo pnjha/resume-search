@@ -1,0 +1,50 @@
+{
+  "$or": [
+    {
+      "$and": [
+        {
+          "$or": [
+            {
+              "text": {
+                "$regex": "react"
+              }
+            },
+            {
+              "text": {
+                "$regex": "vue"
+              }
+            }
+          ]
+        },
+        {
+          "$or": [
+            {
+              "text": {
+                "$regex": "python"
+              }
+            },
+            {
+              "text": {
+                "$regex": "java"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "text": {
+            "$regex": "\"FULL-STACK\""
+          }
+        },
+        {
+          "text": {
+            "$regex": "backend"
+          }
+        }
+      ]
+    }
+  ]
+}
