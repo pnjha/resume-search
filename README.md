@@ -1,2 +1,2 @@
 # resume-search
-A NodeJS API server to search documents based on a particular query format
+A NodeJS application to generate search query from user input query for different database types
